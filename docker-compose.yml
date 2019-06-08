@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  
+  hello-service:
+    build:
+      context: ./hello-service
+    ports:
+      - "3001:8080"
+      - "3002:8000"
+  
+  goodbye-service:
+    build:
+      context: ./goodbye-service
+    ports:
+       - "3003:8080"
+       - "3004:8000"
